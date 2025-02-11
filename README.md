@@ -247,22 +247,7 @@ To ensure a smooth experience with the Intelligent Code Review Bot, follow these
 
 ---
 
-## User Journey and Map
 
-The following flowchart illustrates the typical user journey when interacting with the Intelligent Code Review Bot:
-
-```mermaid
-graph LR
-    A[Developer submits a Pull Request] --> B[GitHub triggers webhook event]
-    B --> C[Webhook Listener validates the request]
-    C --> D[Fetch PR diff using GitHub API]
-    D --> E[AI Module analyzes the code diff (using LangChain)]
-    E --> F[Generate natural language review comments]
-    F --> G[Post comments on the pull request]
-    G --> H[Developer reviews feedback]
-    H --> I[Developer makes improvements]
-    I --> J[Feedback loop updates AI model (via LangSmith)]
-```
 
 ### Explanation:
 - **A:** The process starts when a developer submits or updates a pull request.
