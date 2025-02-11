@@ -116,6 +116,7 @@ The project is built with a modular design to ensure maintainability and scalabi
 2. **Install Dependencies:**
 
    ```bash
+   pip install flask pygithub python-dotenv langchain langsmith
    pip install -r requirements.txt
    ```
 
